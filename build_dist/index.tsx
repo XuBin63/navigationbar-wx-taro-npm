@@ -1,9 +1,8 @@
 import "./index.scss";
 import { View } from "@tarojs/components";
-import { useEffect, useState } from "react";
 import { NavigationbarWxTaro } from "./config";
 import Taro from "@tarojs/taro";
-
+import { Props } from "./data";
 const {
   title,
   logo,
@@ -15,9 +14,9 @@ const {
   hideSeat,
   homePath,
 } = NavigationbarWxTaro.config;
-const NavigationbarTaro = (props) => {
+const NavigationbarTaro = (props: Props) => {
   const menu = Taro.getMenuButtonBoundingClientRect();
-  const [data, setData] = useState({
+  const data = {
     menu,
     pages: Taro.getCurrentPages(),
     barH: menu.bottom + 10,
@@ -30,13 +29,7 @@ const NavigationbarTaro = (props) => {
     hideHome: props.hideHome || hideHome,
     hideSeat: props.hideSeat || hideSeat,
     homePath: props.homePath || homePath,
-  });
-  useEffect(() => {
-    setData({
-      ...data,
-      ...props,
-    });
-  }, [data, props]);
+  };
   return (
     <>
       <View

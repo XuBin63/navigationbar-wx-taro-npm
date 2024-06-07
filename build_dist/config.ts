@@ -1,3 +1,4 @@
+import { Props } from "./data";
 export const NavigationbarWxTaro = {
   config: {
     /**小程序标题 */
@@ -19,7 +20,7 @@ export const NavigationbarWxTaro = {
     /**首页默认路径 */
     homePath: "/pages/index/index",
   },
-  init(data: any) {
+  init(data: Props) {
     this.config = { ...this.config, ...data };
   },
 };
