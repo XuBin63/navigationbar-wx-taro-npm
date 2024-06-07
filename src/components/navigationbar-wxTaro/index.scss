@@ -1,0 +1,88 @@
+.NavigationBar {
+  width: 100%;
+  height: 90px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #fff;
+  z-index: 999;
+
+  .titleBox {
+    display: flex;
+    align-items: center;
+    position: relative;
+
+    .box {
+      border: 2rpx solid #b9b9b9;
+      margin-left: 12rpx;
+      background: rgba($color: #ffffff, $alpha: 0.6);
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+
+      .back {
+        background: url("./img/back_white.png") center center / 60% auto no-repeat;
+      }
+
+      .back_black {
+        background: url("./img/back_black.png") center center / 60% auto no-repeat;
+      }
+
+      .home {
+        background: url("./img/home_white.png") center center / 70% auto no-repeat;
+      }
+
+      .home_black {
+        background: url("./img//home_black.png") center center / 70% auto no-repeat;
+      }
+
+      .line {
+        width: 2rpx;
+        height: 35rpx;
+        background: #b9b9b9;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+
+    .box1 {
+      background: rgba($color: #000000, $alpha: 0.1);
+      border: 2rpx solid rgba($color: #cccccc, $alpha: 0.1);
+    }
+
+    .homeBox {
+      background: url("https://scrm-assets-benefitbrows.lvmh-pc.cn/benefit/center/img004.png") center center / 70% auto no-repeat;
+      margin-left: 20rpx;
+    }
+
+    .homeBox_black {
+      background: url("https://scrm-assets-benefitbrows.lvmh-pc.cn/benefit/center/img024.png") center center / 70% auto no-repeat;
+    }
+
+    .logo {
+      width: 100%;
+      height: 48rpx;
+      position: absolute;
+      pointer-events: none;
+    }
+
+    .centerTi {
+      width: 100%;
+      position: absolute;
+      font-size: 30rpx;
+      color: #ffffff;
+      text-align: center;
+      pointer-events: none;
+    }
+  }
+}
+
+.hideSeat {
+  width: 100%;
+  position: relative;
+  top: 0;
+  left: 0;
+}

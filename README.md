@@ -3,13 +3,13 @@
 ### 1、安装
 
 ```
-npm i navigationbar-wxTaro
+npm i navigationbar-wx-taro
 ```
 
 ### 2、app.js 内写上如下：
 
 ```JS
-import { NavigationbarWxTaro } from "navigationbar-wxTaro/config";
+import { NavigationbarWxTaro } from "navigationbar-wx-taro/config";
 NavigationbarWxTaro.init({
   title: "小程序默认名称",
   homePath: "/pages/index/index",//默认路径，如果相同可以忽略这个参数
@@ -20,7 +20,7 @@ NavigationbarWxTaro.init({
 ### 3、页面使用-传参如下说明
 
 ```tsx
-import NavigationbarTaro from "navigationbar-wxTaro";
+import NavigationbarTaro from "navigationbar-wx-taro";
 // <!-- 可直接使用 -->
 <NavigationbarTaro />
 // <!-- 也可传参使用 -->
